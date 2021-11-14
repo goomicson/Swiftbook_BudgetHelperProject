@@ -81,7 +81,7 @@
         <!--HomeScreen-->
         <scene sceneID="Qs5-uh-1Ma">
             <objects>
-                <viewController title="HomeScreen" id="kmx-ZJ-VXn" customClass="HomeScreenViewController" customModule="Collab_HW" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="HomeScreen" id="kmx-ZJ-VXn" customClass="HomeScreenViewController" customModule="Swiftbook_BudgetHelperProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UrS-q1-XB8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -121,7 +121,7 @@
                                     <imageReference key="image" image="plus.app" catalog="system" symbolScale="large"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="VG6-Gw-mmj" kind="show" id="24Y-g7-n8A"/>
+                                    <segue destination="VG6-Gw-mmj" kind="show" id="0Sh-eu-4St"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -234,9 +234,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oWh-hh-2wW"/>
-                    <connections>
-                        <outlet property="spendOrProfitSegmentedControl" destination="vx1-vZ-iIB" id="8dj-eh-ANw"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hht-km-fOe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -245,7 +242,7 @@
         <!--Plans-->
         <scene sceneID="d5m-BK-Reg">
             <objects>
-                <viewController title="Plans" id="IyR-2U-DX2" customClass="MyPlansViewController" customModule="Collab_HW" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Plans" id="IyR-2U-DX2" customClass="MyPlansViewController" customModule="Swiftbook_BudgetHelperProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qN4-Lt-a08">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

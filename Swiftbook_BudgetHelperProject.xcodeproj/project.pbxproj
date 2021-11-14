@@ -23,6 +23,7 @@
 		A55E485F274171CA00F21D8B /* SF-Pro-Rounded-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A55E4856274171CA00F21D8B /* SF-Pro-Rounded-Semibold.otf */; };
 		A55E48612741723400F21D8B /* MyPlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55E48602741723400F21D8B /* MyPlansViewController.swift */; };
 		A55E48642741730500F21D8B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55E48632741730500F21D8B /* Model.swift */; };
+		A5F27D872741814F006E5ED9 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F27D862741814F006E5ED9 /* HomeScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		A55E4856274171CA00F21D8B /* SF-Pro-Rounded-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Semibold.otf"; path = "../../../../../../../../../../Library/Fonts/SF-Pro-Rounded-Semibold.otf"; sourceTree = "<group>"; };
 		A55E48602741723400F21D8B /* MyPlansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlansViewController.swift; sourceTree = "<group>"; };
 		A55E48632741730500F21D8B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A5F27D862741814F006E5ED9 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				A55E48602741723400F21D8B /* MyPlansViewController.swift */,
+				A5F27D862741814F006E5ED9 /* HomeScreenViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				A55E48372741703E00F21D8B /* AppDelegate.swift in Sources */,
 				A55E48392741703E00F21D8B /* SceneDelegate.swift in Sources */,
 				A55E48642741730500F21D8B /* Model.swift in Sources */,
+				A5F27D872741814F006E5ED9 /* HomeScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
