@@ -585,7 +585,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="19P-S3-jod" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3255" y="706.69014084507046"/>
+            <point key="canvasLocation" x="3254" y="706"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="16t-m5-TZs">
@@ -632,21 +632,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goX-7g-b7y">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New subscribtion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goX-7g-b7y">
                                 <rect key="frame" x="20" y="10" width="374" height="26.5"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="22"/>
                                 <color key="textColor" red="0.1529433727" green="0.15309533480000001" blue="0.14474323389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ammount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ils-mH-NWv">
-                                <rect key="frame" x="20" y="86.5" width="374" height="34"/>
+                                <rect key="frame" x="20" y="130.5" width="374" height="34"/>
                                 <color key="backgroundColor" red="0.99636322259999999" green="0.99215686270000003" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.1529433727" green="0.15309533480000001" blue="0.14474323389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cK2-it-wSX">
-                                <rect key="frame" x="20" y="250.5" width="374" height="32"/>
+                                <rect key="frame" x="20" y="294.5" width="374" height="32"/>
                                 <segments>
                                     <segment title="Daily"/>
                                     <segment title="Monthly"/>
@@ -654,7 +654,7 @@
                                 </segments>
                             </segmentedControl>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="zg6-TQ-gr4">
-                                <rect key="frame" x="20" y="160.5" width="374" height="50"/>
+                                <rect key="frame" x="20" y="204.5" width="374" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTZ-P5-Vxz">
                                         <rect key="frame" x="0.0" y="0.0" width="103.5" height="50"/>
@@ -667,6 +667,11 @@
                                     </datePicker>
                                 </subviews>
                             </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HH9-Ro-tqy">
+                                <rect key="frame" x="20" y="66.5" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5ty-Ya-wfj"/>
                         <color key="backgroundColor" red="0.99636322259999999" green="0.98482829329999999" blue="0.95545035599999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -674,21 +679,24 @@
                             <constraint firstItem="5ty-Ya-wfj" firstAttribute="trailing" secondItem="cK2-it-wSX" secondAttribute="trailing" constant="20" id="3RS-Ip-LOd"/>
                             <constraint firstItem="5ty-Ya-wfj" firstAttribute="trailing" secondItem="ils-mH-NWv" secondAttribute="trailing" constant="20" id="9TY-Dq-o7P"/>
                             <constraint firstItem="ils-mH-NWv" firstAttribute="leading" secondItem="5ty-Ya-wfj" secondAttribute="leading" constant="20" id="9pW-JD-MCp"/>
+                            <constraint firstItem="5ty-Ya-wfj" firstAttribute="trailing" secondItem="HH9-Ro-tqy" secondAttribute="trailing" constant="20" id="DaA-4n-vSX"/>
                             <constraint firstItem="5ty-Ya-wfj" firstAttribute="trailing" secondItem="goX-7g-b7y" secondAttribute="trailing" constant="20" id="KxY-Xi-chG"/>
+                            <constraint firstItem="ils-mH-NWv" firstAttribute="top" secondItem="HH9-Ro-tqy" secondAttribute="bottom" constant="30" id="Njy-jp-BMf"/>
                             <constraint firstItem="zg6-TQ-gr4" firstAttribute="top" secondItem="ils-mH-NWv" secondAttribute="bottom" constant="40" id="PwY-Vv-JBh"/>
                             <constraint firstItem="5ty-Ya-wfj" firstAttribute="trailing" secondItem="zg6-TQ-gr4" secondAttribute="trailing" constant="20" id="Yci-gy-RbT"/>
+                            <constraint firstItem="HH9-Ro-tqy" firstAttribute="leading" secondItem="5ty-Ya-wfj" secondAttribute="leading" constant="20" id="a2O-Rr-AiK"/>
                             <constraint firstItem="goX-7g-b7y" firstAttribute="leading" secondItem="5ty-Ya-wfj" secondAttribute="leading" constant="20" id="aYl-dp-7YX"/>
+                            <constraint firstItem="HH9-Ro-tqy" firstAttribute="top" secondItem="goX-7g-b7y" secondAttribute="bottom" constant="30" id="btw-ZL-Z34"/>
                             <constraint firstItem="goX-7g-b7y" firstAttribute="top" secondItem="5ty-Ya-wfj" secondAttribute="top" constant="10" id="dnj-Dr-v1n"/>
                             <constraint firstItem="cK2-it-wSX" firstAttribute="top" secondItem="zg6-TQ-gr4" secondAttribute="bottom" constant="40" id="faY-NI-Kgf"/>
                             <constraint firstItem="zg6-TQ-gr4" firstAttribute="leading" secondItem="5ty-Ya-wfj" secondAttribute="leading" constant="20" id="mx6-k0-AvU"/>
-                            <constraint firstItem="ils-mH-NWv" firstAttribute="top" secondItem="goX-7g-b7y" secondAttribute="bottom" constant="50" id="vOQ-nC-gHm"/>
                             <constraint firstItem="cK2-it-wSX" firstAttribute="leading" secondItem="5ty-Ya-wfj" secondAttribute="leading" constant="20" id="yvJ-8j-DKa"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QgQ-K9-cfK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3266.25" y="6.3380281690140849"/>
+            <point key="canvasLocation" x="3254" y="7"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="1hj-k3-RvM">
