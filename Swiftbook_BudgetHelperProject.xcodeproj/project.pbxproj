@@ -9,21 +9,41 @@
 /* Begin PBXBuildFile section */
 		A55E48372741703E00F21D8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55E48362741703E00F21D8B /* AppDelegate.swift */; };
 		A55E48392741703E00F21D8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55E48382741703E00F21D8B /* SceneDelegate.swift */; };
-		A55E483B2741703E00F21D8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55E483A2741703E00F21D8B /* ViewController.swift */; };
 		A55E483E2741703E00F21D8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55E483C2741703E00F21D8B /* Main.storyboard */; };
 		A55E48402741704200F21D8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A55E483F2741704200F21D8B /* Assets.xcassets */; };
 		A55E48432741704200F21D8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55E48412741704200F21D8B /* LaunchScreen.storyboard */; };
+		A55E4857274171CA00F21D8B /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A55E484E274171C900F21D8B /* SF-Pro-Rounded-Bold.otf */; };
+		A55E4858274171CA00F21D8B /* SF-Pro-Rounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A55E484F274171C900F21D8B /* SF-Pro-Rounded-Medium.otf */; };
+		A55E4859274171CA00F21D8B /* SF-Pro-Rounded-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = A55E4850274171C900F21D8B /* SF-Pro-Rounded-Thin.otf */; };
+		A55E485A274171CA00F21D8B /* SF-Pro-Rounded-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A55E4851274171C900F21D8B /* SF-Pro-Rounded-Regular.otf */; };
+		A55E485B274171CA00F21D8B /* SF-Pro-Rounded-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = A55E4852274171C900F21D8B /* SF-Pro-Rounded-Light.otf */; };
+		A55E485C274171CA00F21D8B /* SF-Pro-Rounded-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = A55E4853274171C900F21D8B /* SF-Pro-Rounded-Ultralight.otf */; };
+		A55E485D274171CA00F21D8B /* SF-Pro-Rounded-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = A55E4854274171C900F21D8B /* SF-Pro-Rounded-Heavy.otf */; };
+		A55E485E274171CA00F21D8B /* SF-Pro-Rounded-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = A55E4855274171CA00F21D8B /* SF-Pro-Rounded-Black.otf */; };
+		A55E485F274171CA00F21D8B /* SF-Pro-Rounded-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A55E4856274171CA00F21D8B /* SF-Pro-Rounded-Semibold.otf */; };
+		A55E48612741723400F21D8B /* MyPlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55E48602741723400F21D8B /* MyPlansViewController.swift */; };
+		A55E48642741730500F21D8B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55E48632741730500F21D8B /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A55E48332741703E00F21D8B /* Swiftbook_BudgetHelperProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swiftbook_BudgetHelperProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A55E48362741703E00F21D8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A55E48382741703E00F21D8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A55E483A2741703E00F21D8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A55E483D2741703E00F21D8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A55E483F2741704200F21D8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A55E48422741704200F21D8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A55E48442741704200F21D8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A55E484E274171C900F21D8B /* SF-Pro-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Bold.otf"; path = "../../../../../../../../../../Library/Fonts/SF-Pro-Rounded-Bold.otf"; sourceTree = "<group>"; };
+		A55E484F274171C900F21D8B /* SF-Pro-Rounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Medium.otf"; path = "../../../../../../../../../../Library/Fonts/SF-Pro-Rounded-Medium.otf"; sourceTree = "<group>"; };
+		A55E4850274171C900F21D8B /* SF-Pro-Rounded-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Thin.otf"; path = "../../../../../../../../../../Library/Fonts/SF-Pro-Rounded-Thin.otf"; sourceTree = "<group>"; };
+		A55E4851274171C900F21D8B /* SF-Pro-Rounded-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Regular.otf"; path = "../../../../../../../../../../Library/Fonts/SF-Pro-Rounded-Regular.otf"; sourceTree = "<group>"; };
+		A55E4852274171C900F21D8B /* SF-Pro-Rounded-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Light.otf"; path = "../../../../../../../../../../Library/Fonts/SF-Pro-Rounded-Light.otf"; sourceTree = "<group>"; };
+		A55E4853274171C900F21D8B /* SF-Pro-Rounded-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Ultralight.otf"; path = "../../../../../../../../../../Library/Fonts/SF-Pro-Rounded-Ultralight.otf"; sourceTree = "<group>"; };
+		A55E4854274171C900F21D8B /* SF-Pro-Rounded-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Heavy.otf"; path = "../../../../../../../../../../Library/Fonts/SF-Pro-Rounded-Heavy.otf"; sourceTree = "<group>"; };
+		A55E4855274171CA00F21D8B /* SF-Pro-Rounded-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Black.otf"; path = "../../../../../../../../../../Library/Fonts/SF-Pro-Rounded-Black.otf"; sourceTree = "<group>"; };
+		A55E4856274171CA00F21D8B /* SF-Pro-Rounded-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Semibold.otf"; path = "../../../../../../../../../../Library/Fonts/SF-Pro-Rounded-Semibold.otf"; sourceTree = "<group>"; };
+		A55E48602741723400F21D8B /* MyPlansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlansViewController.swift; sourceTree = "<group>"; };
+		A55E48632741730500F21D8B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +76,65 @@
 		A55E48352741703E00F21D8B /* Swiftbook_BudgetHelperProject */ = {
 			isa = PBXGroup;
 			children = (
-				A55E48362741703E00F21D8B /* AppDelegate.swift */,
-				A55E48382741703E00F21D8B /* SceneDelegate.swift */,
-				A55E483A2741703E00F21D8B /* ViewController.swift */,
-				A55E483C2741703E00F21D8B /* Main.storyboard */,
-				A55E483F2741704200F21D8B /* Assets.xcassets */,
-				A55E48412741704200F21D8B /* LaunchScreen.storyboard */,
-				A55E48442741704200F21D8B /* Info.plist */,
+				A55E4862274172EB00F21D8B /* Models */,
+				A55E484C2741708500F21D8B /* Views */,
+				A55E484B2741707400F21D8B /* Controllers */,
+				A55E484A2741705B00F21D8B /* Tech */,
 			);
 			path = Swiftbook_BudgetHelperProject;
+			sourceTree = "<group>";
+		};
+		A55E484A2741705B00F21D8B /* Tech */ = {
+			isa = PBXGroup;
+			children = (
+				A55E48362741703E00F21D8B /* AppDelegate.swift */,
+				A55E48382741703E00F21D8B /* SceneDelegate.swift */,
+				A55E48442741704200F21D8B /* Info.plist */,
+				A55E483F2741704200F21D8B /* Assets.xcassets */,
+				A55E484D274171B000F21D8B /* Fonts */,
+			);
+			path = Tech;
+			sourceTree = "<group>";
+		};
+		A55E484B2741707400F21D8B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A55E48602741723400F21D8B /* MyPlansViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A55E484C2741708500F21D8B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A55E48412741704200F21D8B /* LaunchScreen.storyboard */,
+				A55E483C2741703E00F21D8B /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A55E484D274171B000F21D8B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A55E4855274171CA00F21D8B /* SF-Pro-Rounded-Black.otf */,
+				A55E484E274171C900F21D8B /* SF-Pro-Rounded-Bold.otf */,
+				A55E4854274171C900F21D8B /* SF-Pro-Rounded-Heavy.otf */,
+				A55E4852274171C900F21D8B /* SF-Pro-Rounded-Light.otf */,
+				A55E484F274171C900F21D8B /* SF-Pro-Rounded-Medium.otf */,
+				A55E4851274171C900F21D8B /* SF-Pro-Rounded-Regular.otf */,
+				A55E4856274171CA00F21D8B /* SF-Pro-Rounded-Semibold.otf */,
+				A55E4850274171C900F21D8B /* SF-Pro-Rounded-Thin.otf */,
+				A55E4853274171C900F21D8B /* SF-Pro-Rounded-Ultralight.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A55E4862274172EB00F21D8B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A55E48632741730500F21D8B /* Model.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +195,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A55E485C274171CA00F21D8B /* SF-Pro-Rounded-Ultralight.otf in Resources */,
+				A55E485E274171CA00F21D8B /* SF-Pro-Rounded-Black.otf in Resources */,
 				A55E48432741704200F21D8B /* LaunchScreen.storyboard in Resources */,
+				A55E485B274171CA00F21D8B /* SF-Pro-Rounded-Light.otf in Resources */,
+				A55E485A274171CA00F21D8B /* SF-Pro-Rounded-Regular.otf in Resources */,
+				A55E4858274171CA00F21D8B /* SF-Pro-Rounded-Medium.otf in Resources */,
+				A55E4857274171CA00F21D8B /* SF-Pro-Rounded-Bold.otf in Resources */,
+				A55E485F274171CA00F21D8B /* SF-Pro-Rounded-Semibold.otf in Resources */,
+				A55E485D274171CA00F21D8B /* SF-Pro-Rounded-Heavy.otf in Resources */,
+				A55E4859274171CA00F21D8B /* SF-Pro-Rounded-Thin.otf in Resources */,
 				A55E48402741704200F21D8B /* Assets.xcassets in Resources */,
 				A55E483E2741703E00F21D8B /* Main.storyboard in Resources */,
 			);
@@ -138,9 +217,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A55E483B2741703E00F21D8B /* ViewController.swift in Sources */,
+				A55E48612741723400F21D8B /* MyPlansViewController.swift in Sources */,
 				A55E48372741703E00F21D8B /* AppDelegate.swift in Sources */,
 				A55E48392741703E00F21D8B /* SceneDelegate.swift in Sources */,
+				A55E48642741730500F21D8B /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,12 +371,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2Z8C557VYL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Swiftbook_BudgetHelperProject/Info.plist;
+				INFOPLIST_FILE = Swiftbook_BudgetHelperProject/Tech/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,12 +400,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2Z8C557VYL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Swiftbook_BudgetHelperProject/Info.plist;
+				INFOPLIST_FILE = Swiftbook_BudgetHelperProject/Tech/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
