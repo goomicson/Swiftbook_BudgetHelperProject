@@ -8,6 +8,8 @@
 import UIKit
 
 class MyPlansViewController: UIViewController {
+    
+    private let accumulation = Accumulation.getData()
 
     //MARK: accumulationView Outlets
     @IBOutlet var accumulationBackgroundView: UIView!
@@ -28,9 +30,18 @@ class MyPlansViewController: UIViewController {
         super.viewDidLoad()
         customizingCurrentAccumulationView()
         customizingButtonsView()
+        accumulationTitle.text = accumulation.first?.name
+        accumulationAmountTitle.text = accumulation.first?.totalAmount.description
+progress()
         
     }
 
+    
+    func progress() {
+        let totalProgress = accumulation.first?.percent
+    
+        accumulationProgressBarProgressTrack.
+    }
    
 }
 extension MyPlansViewController {

@@ -148,7 +148,7 @@ extension Action {
             Action(amount: 1453839, direction: true, startDate: dates[4], frequency: .month, name: "Third Action", endDate: dates[5]),
             Action(amount: 136578, direction: false, startDate: dates[6], frequency: .month, name: "Fourth Action", endDate: dates[7]),
             Action(amount: 236793, direction: true, startDate: Date(), frequency: .none),
-            Action(amount: 265, direction: false, startDate: Date(), frequency: .month)
+            Action(amount: 265, direction: false, startDate: Date(), frequency: .month, name: "Cinema")
         ]
         return actions
     }

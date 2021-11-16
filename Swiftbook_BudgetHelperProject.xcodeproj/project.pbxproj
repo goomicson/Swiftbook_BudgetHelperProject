@@ -27,6 +27,8 @@
 		B8CCC2BC274280F0004E8539 /* Accumulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CCC2BB274280F0004E8539 /* Accumulation.swift */; };
 		B8CCC2BE27428113004E8539 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CCC2BD27428113004E8539 /* Action.swift */; };
 		F813F07F2743F64700E51268 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F813F07E2743F64700E51268 /* HistoryViewController.swift */; };
+		F813F081274411C300E51268 /* SubscribtionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F813F080274411C300E51268 /* SubscribtionTableViewController.swift */; };
+		F813F083274416A800E51268 /* AccumulationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F813F082274416A800E51268 /* AccumulationTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		B8CCC2BB274280F0004E8539 /* Accumulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accumulation.swift; sourceTree = "<group>"; };
 		B8CCC2BD27428113004E8539 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		F813F07E2743F64700E51268 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		F813F080274411C300E51268 /* SubscribtionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribtionTableViewController.swift; sourceTree = "<group>"; };
+		F813F082274416A800E51268 /* AccumulationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccumulationTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,9 +111,11 @@
 		A55E484B2741707400F21D8B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A55E48602741723400F21D8B /* MyPlansViewController.swift */,
 				A5F27D862741814F006E5ED9 /* HomeScreenViewController.swift */,
 				F813F07E2743F64700E51268 /* HistoryViewController.swift */,
+				A55E48602741723400F21D8B /* MyPlansViewController.swift */,
+				F813F080274411C300E51268 /* SubscribtionTableViewController.swift */,
+				F813F082274416A800E51268 /* AccumulationTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -229,7 +235,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F813F081274411C300E51268 /* SubscribtionTableViewController.swift in Sources */,
 				A55E48612741723400F21D8B /* MyPlansViewController.swift in Sources */,
+				F813F083274416A800E51268 /* AccumulationTableViewController.swift in Sources */,
 				A55E48372741703E00F21D8B /* AppDelegate.swift in Sources */,
 				B8CCC2BC274280F0004E8539 /* Accumulation.swift in Sources */,
 				A55E48392741703E00F21D8B /* SceneDelegate.swift in Sources */,
