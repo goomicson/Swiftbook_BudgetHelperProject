@@ -14,7 +14,7 @@ struct User {
 
 extension User {
     static func getData() -> User {
-        let user = User(name: "Richard Gere", account: 125000000)
+        let user = User(name: "Richard Gere", account: 12500000)
         return user
     }
 }

@@ -26,6 +26,7 @@
 		A5F27D872741814F006E5ED9 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F27D862741814F006E5ED9 /* HomeScreenViewController.swift */; };
 		B8CCC2BC274280F0004E8539 /* Accumulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CCC2BB274280F0004E8539 /* Accumulation.swift */; };
 		B8CCC2BE27428113004E8539 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CCC2BD27428113004E8539 /* Action.swift */; };
+		F813F07F2743F64700E51268 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F813F07E2743F64700E51268 /* HistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		A5F27D862741814F006E5ED9 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		B8CCC2BB274280F0004E8539 /* Accumulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accumulation.swift; sourceTree = "<group>"; };
 		B8CCC2BD27428113004E8539 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		F813F07E2743F64700E51268 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			children = (
 				A55E48602741723400F21D8B /* MyPlansViewController.swift */,
 				A5F27D862741814F006E5ED9 /* HomeScreenViewController.swift */,
+				F813F07E2743F64700E51268 /* HistoryViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				B8CCC2BE27428113004E8539 /* Action.swift in Sources */,
 				A55E48642741730500F21D8B /* User.swift in Sources */,
 				A5F27D872741814F006E5ED9 /* HomeScreenViewController.swift in Sources */,
+				F813F07F2743F64700E51268 /* HistoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

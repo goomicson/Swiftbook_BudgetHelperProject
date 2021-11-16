@@ -26,13 +26,13 @@
         <!--History-->
         <scene sceneID="No1-JA-b1h">
             <objects>
-                <viewController title="History" id="VEV-tg-2uN" sceneMemberID="viewController">
+                <viewController title="History" id="VEV-tg-2uN" customClass="HistoryViewController" customModule="Swiftbook_BudgetHelperProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cO5-bk-bOb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1M-c9-SXc">
-                                <rect key="frame" x="170.5" y="54" width="73" height="26"/>
+                                <rect key="frame" x="172" y="54" width="70" height="26"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="22"/>
                                 <color key="textColor" red="0.1529433727" green="0.15309533480000001" blue="0.14474323389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -93,16 +93,16 @@
                                 <color key="highlightedColor" red="0.1529433727" green="0.15309533480000001" blue="0.14474323389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 500.48₽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsO-sc-Egq">
-                                <rect key="frame" x="16" y="149.5" width="175.5" height="38.5"/>
+                                <rect key="frame" x="16" y="149.5" width="175.5" height="37.5"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="32"/>
                                 <color key="textColor" red="0.1529433727" green="0.15309533480000001" blue="0.14474323389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" red="0.1529433727" green="0.15309533480000001" blue="0.14474323389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4Lv-Hq-xCU">
-                                <rect key="frame" x="20" y="208" width="374" height="605"/>
+                                <rect key="frame" x="20" y="207" width="374" height="606"/>
                                 <color key="backgroundColor" red="0.99636322259999999" green="0.98482829329999999" blue="0.95545035599999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="mhd-eL-T4y">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="action" id="mhd-eL-T4y">
                                         <rect key="frame" x="0.0" y="44.5" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mhd-eL-T4y" id="QXC-rK-sXF">
@@ -112,6 +112,9 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="kmx-ZJ-VXn" id="Nj3-0S-jnW"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABc-kB-qju">
                                 <rect key="frame" x="350.5" y="54" width="43.5" height="31"/>
@@ -154,6 +157,9 @@
                         </imageReference>
                     </tabBarItem>
                     <navigationItem key="navigationItem" title="My Bill" largeTitleDisplayMode="always" id="qg5-to-qdQ"/>
+                    <connections>
+                        <outlet property="summLabel" destination="bsO-sc-Egq" id="RE0-RX-fkU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3HD-FP-QRt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -168,20 +174,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ammount" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Fu9-ZZ-s0c">
-                                <rect key="frame" x="20" y="142" width="374" height="34"/>
+                                <rect key="frame" x="20" y="141.5" width="374" height="34"/>
                                 <color key="backgroundColor" red="0.99636322259999999" green="0.99215686270000003" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.1529433727" green="0.15309533480000001" blue="0.14474323389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add new action" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubI-Jk-NGf">
-                                <rect key="frame" x="130" y="10" width="154.5" height="26.5"/>
+                                <rect key="frame" x="130" y="10" width="154" height="26"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="22"/>
                                 <color key="textColor" red="0.1529433727" green="0.15309533480000001" blue="0.14474323389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="vx1-vZ-iIB">
-                                <rect key="frame" x="20" y="71" width="374" height="32"/>
+                                <rect key="frame" x="20" y="70.5" width="374" height="32"/>
                                 <color key="backgroundColor" red="0.99636322259999999" green="0.98482829329999999" blue="0.95545035599999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <segments>
                                     <segment title="Spend"/>
@@ -191,7 +197,7 @@
                                 <color key="selectedSegmentTintColor" red="0.99608677629999998" green="0.99227565529999995" blue="0.98790901900000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </segmentedControl>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="yB7-mj-hWx">
-                                <rect key="frame" x="20" y="196" width="374" height="50"/>
+                                <rect key="frame" x="20" y="195.5" width="374" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWn-d7-3Lq">
                                         <rect key="frame" x="0.0" y="0.0" width="51" height="50"/>
@@ -206,7 +212,7 @@
                                 </subviews>
                             </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Write a note if you want..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Jv1-CB-nd1">
-                                <rect key="frame" x="14" y="266" width="380" height="522"/>
+                                <rect key="frame" x="14" y="265.5" width="380" height="522.5"/>
                                 <color key="backgroundColor" red="0.99636322259999999" green="0.98482829329999999" blue="0.95545035599999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.1529433727" green="0.15309533480000001" blue="0.14474323389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Light" family="SF Pro Rounded" pointSize="17"/>
@@ -251,7 +257,7 @@
                                 <rect key="frame" x="20" y="170" width="374" height="179"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0eK-E5-ix3">
-                                        <rect key="frame" x="8" y="13.5" width="59" height="30.5"/>
+                                        <rect key="frame" x="8" y="13.5" width="58.5" height="30.5"/>
                                         <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="22"/>
                                         <color key="textColor" red="0.1529433727" green="0.15309533480000001" blue="0.14474323389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="highlightedColor" red="0.1529433727" green="0.15309533480000001" blue="0.14474323389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -277,7 +283,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10000000/10000000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jnc-vk-Eda">
-                                        <rect key="frame" x="74.5" y="53.5" width="225" height="72"/>
+                                        <rect key="frame" x="85.5" y="53.5" width="203.5" height="72"/>
                                         <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="22"/>
                                         <color key="textColor" red="0.1529433727" green="0.15309533480000001" blue="0.14474323389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="highlightedColor" red="0.1529433727" green="0.15309533480000001" blue="0.14474323389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -442,22 +448,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add new accumulation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dus-FD-aj7">
-                                <rect key="frame" x="20" y="10" width="374" height="26.5"/>
+                                <rect key="frame" x="20" y="10" width="374" height="26"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="22"/>
                                 <color key="textColor" red="0.1529433727" green="0.15309533480000001" blue="0.14474323389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="zew-DL-iLB">
-                                <rect key="frame" x="20" y="185" width="374" height="52.5"/>
+                                <rect key="frame" x="20" y="184" width="374" height="52"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How much do you want to accumulate?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yM-Ts-PSn">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="14.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="14"/>
                                         <fontDescription key="fontDescription" name="SFProRounded-Light" family="SF Pro Rounded" pointSize="12"/>
                                         <color key="textColor" red="0.1529433727" green="0.15309533480000001" blue="0.14474323389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WFA-Mg-ZbB">
-                                        <rect key="frame" x="0.0" y="18.5" width="374" height="34"/>
+                                        <rect key="frame" x="0.0" y="18" width="374" height="34"/>
                                         <color key="backgroundColor" red="0.99636322259999999" green="0.99215686270000003" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="textColor" red="0.1529433727" green="0.15309533480000001" blue="0.14474323389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -466,32 +472,32 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="xjc-Ju-9SG">
-                                <rect key="frame" x="20" y="61.5" width="374" height="52.5"/>
+                                <rect key="frame" x="20" y="61" width="374" height="52"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the the goal?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0E-jt-6LQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="14.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="14"/>
                                         <fontDescription key="fontDescription" name="SFProRounded-Light" family="SF Pro Rounded" pointSize="12"/>
                                         <color key="textColor" red="0.1529433727" green="0.15309533480000001" blue="0.14474323389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Ib-hc-BGC">
-                                        <rect key="frame" x="0.0" y="18.5" width="374" height="34"/>
+                                        <rect key="frame" x="0.0" y="18" width="374" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Ygc-uY-kM2">
-                                <rect key="frame" x="20" y="257.5" width="374" height="52.5"/>
+                                <rect key="frame" x="20" y="256" width="374" height="52"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How long (in months) you will accumulate?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1H1-7B-7gZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="14.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="14"/>
                                         <fontDescription key="fontDescription" name="SFProRounded-Light" family="SF Pro Rounded" pointSize="12"/>
                                         <color key="textColor" red="0.1529433727" green="0.15309533480000001" blue="0.14474323389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TDC-A8-d5r">
-                                        <rect key="frame" x="0.0" y="18.5" width="374" height="34"/>
+                                        <rect key="frame" x="0.0" y="18" width="374" height="34"/>
                                         <color key="backgroundColor" red="0.99636322259999999" green="0.99215686270000003" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="textColor" red="0.1529433727" green="0.15309533480000001" blue="0.14474323389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -500,16 +506,16 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="xLp-Zp-B0C">
-                                <rect key="frame" x="20" y="330" width="374" height="51.5"/>
+                                <rect key="frame" x="20" y="328" width="374" height="51"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a day number when you want to add money" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfM-PH-p8n">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="14.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="14"/>
                                         <fontDescription key="fontDescription" name="SFProRounded-Light" family="SF Pro Rounded" pointSize="12"/>
                                         <color key="textColor" red="0.1529433727" green="0.15309533480000001" blue="0.14474323389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yi5-7u-bmO">
-                                        <rect key="frame" x="0.0" y="17.5" width="374" height="34"/>
+                                        <rect key="frame" x="0.0" y="17" width="374" height="34"/>
                                         <color key="backgroundColor" red="0.99636322259999999" green="0.99215686270000003" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="textColor" red="0.1529433727" green="0.15309533480000001" blue="0.14474323389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -518,7 +524,7 @@
                                 </subviews>
                             </stackView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="WI9-Wq-bOR">
-                                <rect key="frame" x="20" y="134" width="374" height="32"/>
+                                <rect key="frame" x="20" y="133" width="374" height="32"/>
                                 <segments>
                                     <segment title="Euro"/>
                                     <segment title="Dollar"/>
@@ -537,16 +543,16 @@
                                 </buttonConfiguration>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gC5-xO-dNF">
-                                <rect key="frame" x="97.5" y="401.5" width="219" height="67"/>
+                                <rect key="frame" x="101" y="399" width="212.5" height="65.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You need to add" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JuX-hl-xQ8">
-                                        <rect key="frame" x="0.0" y="0.0" width="219" height="18"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="212.5" height="17.5"/>
                                         <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="15"/>
                                         <color key="textColor" red="0.1529433727" green="0.15309533480000001" blue="0.14474323389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000$ /month" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXw-zN-nb7">
-                                        <rect key="frame" x="0.0" y="26" width="219" height="41"/>
+                                        <rect key="frame" x="0.0" y="25.5" width="212.5" height="40"/>
                                         <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="34"/>
                                         <color key="textColor" red="0.095137096939999999" green="0.49108654260000001" blue="0.064081080260000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -633,20 +639,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New subscribtion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goX-7g-b7y">
-                                <rect key="frame" x="20" y="10" width="374" height="26.5"/>
+                                <rect key="frame" x="20" y="10" width="374" height="26"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="22"/>
                                 <color key="textColor" red="0.1529433727" green="0.15309533480000001" blue="0.14474323389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ammount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ils-mH-NWv">
-                                <rect key="frame" x="20" y="130.5" width="374" height="34"/>
+                                <rect key="frame" x="20" y="130" width="374" height="34"/>
                                 <color key="backgroundColor" red="0.99636322259999999" green="0.99215686270000003" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.1529433727" green="0.15309533480000001" blue="0.14474323389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cK2-it-wSX">
-                                <rect key="frame" x="20" y="294.5" width="374" height="32"/>
+                                <rect key="frame" x="20" y="294" width="374" height="32"/>
                                 <segments>
                                     <segment title="Daily"/>
                                     <segment title="Monthly"/>
@@ -654,21 +660,21 @@
                                 </segments>
                             </segmentedControl>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="zg6-TQ-gr4">
-                                <rect key="frame" x="20" y="204.5" width="374" height="50"/>
+                                <rect key="frame" x="20" y="204" width="374" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTZ-P5-Vxz">
-                                        <rect key="frame" x="0.0" y="0.0" width="103.5" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="106" height="50"/>
                                         <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="17"/>
                                         <color key="textColor" red="0.1529433727" green="0.15309533480000001" blue="0.14474323389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="bwQ-c6-Vxz">
-                                        <rect key="frame" x="105.5" y="0.0" width="268.5" height="50"/>
+                                        <rect key="frame" x="108" y="0.0" width="266" height="50"/>
                                     </datePicker>
                                 </subviews>
                             </stackView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HH9-Ro-tqy">
-                                <rect key="frame" x="20" y="66.5" width="374" height="34"/>
+                                <rect key="frame" x="20" y="66" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
