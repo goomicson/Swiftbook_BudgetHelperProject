@@ -9,7 +9,7 @@ import UIKit
 
 class HistoryViewController: UIViewController {
     
-    private let history = Action.getData()
+    private var history = Action.getData()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,7 +61,16 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
     return cell
 }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let newVC = segue.destination as? NewActionViewController else { return }
+        newVC.newHistory = history
+    }
 
-
+    @IBAction func unwind(for unwindSegue: UIStoryboardSegue) {
+        guard let newVC =  unwindSegue.source as? NewActionViewController else {return}
+        history = newVC.saveAction()
+        tableView.reloadData()
+        
+        }
 
 }

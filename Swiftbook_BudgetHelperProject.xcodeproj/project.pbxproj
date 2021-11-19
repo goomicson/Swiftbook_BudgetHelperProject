@@ -31,6 +31,7 @@
 		F813F083274416A800E51268 /* AccumulationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F813F082274416A800E51268 /* AccumulationTableViewController.swift */; };
 		F889B88D2747D4BE007087F9 /* NewSubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F889B88C2747D4BE007087F9 /* NewSubscriptionViewController.swift */; };
 		F889B89127484266007087F9 /* NewAccumulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F889B89027484266007087F9 /* NewAccumulationViewController.swift */; };
+		F889B893274850E7007087F9 /* NewActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F889B892274850E7007087F9 /* NewActionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		F813F082274416A800E51268 /* AccumulationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccumulationTableViewController.swift; sourceTree = "<group>"; };
 		F889B88C2747D4BE007087F9 /* NewSubscriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSubscriptionViewController.swift; sourceTree = "<group>"; };
 		F889B89027484266007087F9 /* NewAccumulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccumulationViewController.swift; sourceTree = "<group>"; };
+		F889B892274850E7007087F9 /* NewActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewActionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,12 +118,13 @@
 			isa = PBXGroup;
 			children = (
 				A5F27D862741814F006E5ED9 /* HomeScreenViewController.swift */,
-				F813F07E2743F64700E51268 /* HistoryViewController.swift */,
 				A55E48602741723400F21D8B /* MyPlansViewController.swift */,
 				F813F080274411C300E51268 /* SubscribtionTableViewController.swift */,
 				F889B88C2747D4BE007087F9 /* NewSubscriptionViewController.swift */,
 				F813F082274416A800E51268 /* AccumulationTableViewController.swift */,
 				F889B89027484266007087F9 /* NewAccumulationViewController.swift */,
+				F813F07E2743F64700E51268 /* HistoryViewController.swift */,
+				F889B892274850E7007087F9 /* NewActionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 			files = (
 				F813F081274411C300E51268 /* SubscribtionTableViewController.swift in Sources */,
 				A55E48612741723400F21D8B /* MyPlansViewController.swift in Sources */,
+				F889B893274850E7007087F9 /* NewActionViewController.swift in Sources */,
 				F813F083274416A800E51268 /* AccumulationTableViewController.swift in Sources */,
 				A55E48372741703E00F21D8B /* AppDelegate.swift in Sources */,
 				B8CCC2BC274280F0004E8539 /* Accumulation.swift in Sources */,

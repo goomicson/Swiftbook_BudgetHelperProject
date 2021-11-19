@@ -184,10 +184,10 @@
             </objects>
             <point key="canvasLocation" x="-1158.75" y="407.74647887323943"/>
         </scene>
-        <!--View Controller-->
+        <!--New Action View Controller-->
         <scene sceneID="a7r-hz-SmG">
             <objects>
-                <viewController id="VG6-Gw-mmj" sceneMemberID="viewController">
+                <viewController id="VG6-Gw-mmj" customClass="NewActionViewController" customModule="Swiftbook_BudgetHelperProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CHD-Na-8Gt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -219,13 +219,13 @@
                                 <rect key="frame" x="20" y="195.5" width="374" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWn-d7-3Lq">
-                                        <rect key="frame" x="0.0" y="0.0" width="51" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="53.5" height="50"/>
                                         <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="17"/>
                                         <color key="textColor" red="0.1529433727" green="0.15309533480000001" blue="0.14474323389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="highlightedColor" red="0.1529433727" green="0.15309533480000001" blue="0.14474323389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </label>
                                     <datePicker toolTip="fsdfs" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" datePickerMode="dateAndTime" minuteInterval="1" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="BOJ-hS-BIj">
-                                        <rect key="frame" x="64" y="0.0" width="310" height="50"/>
+                                        <rect key="frame" x="66.5" y="0.0" width="307.5" height="50"/>
                                         <color key="backgroundColor" red="0.1529433727" green="0.15309533480000001" blue="0.14474323389999999" alpha="0.55108170759999997" colorSpace="custom" customColorSpace="sRGB"/>
                                     </datePicker>
                                 </subviews>
@@ -237,6 +237,14 @@
                                 <fontDescription key="fontDescription" name="SFProRounded-Light" family="SF Pro Rounded" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0NI-HR-ZkQ">
+                                <rect key="frame" x="130" y="457" width="67" height="31"/>
+                                <color key="backgroundColor" red="0.93081614300000004" green="0.9533691406" blue="0.79258314819999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="Btq-yh-Ua6" kind="unwind" unwindAction="unwindFor:" id="AZR-4F-F8H"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="A8R-nk-o6O"/>
                         <color key="backgroundColor" red="0.99636322259999999" green="0.98482829329999999" blue="0.95545035599999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -244,7 +252,10 @@
                             <constraint firstItem="Fu9-ZZ-s0c" firstAttribute="leading" secondItem="A8R-nk-o6O" secondAttribute="leading" constant="20" id="5vI-1r-YY0"/>
                             <constraint firstItem="A8R-nk-o6O" firstAttribute="trailing" secondItem="Jv1-CB-nd1" secondAttribute="trailing" constant="20" id="8qW-vl-QGD"/>
                             <constraint firstItem="vx1-vZ-iIB" firstAttribute="top" secondItem="ubI-Jk-NGf" secondAttribute="bottom" constant="34.5" id="CWw-z0-ZDp"/>
+                            <constraint firstItem="0NI-HR-ZkQ" firstAttribute="top" secondItem="yB7-mj-hWx" secondAttribute="bottom" constant="211.5" id="ONO-E8-NiI"/>
+                            <constraint firstItem="0NI-HR-ZkQ" firstAttribute="leading" secondItem="A8R-nk-o6O" secondAttribute="leading" constant="130" id="P7P-bf-lUz"/>
                             <constraint firstItem="A8R-nk-o6O" firstAttribute="bottom" secondItem="Jv1-CB-nd1" secondAttribute="bottom" constant="20" id="U7O-OY-Fsf"/>
+                            <constraint firstItem="A8R-nk-o6O" firstAttribute="trailing" secondItem="0NI-HR-ZkQ" secondAttribute="trailing" constant="217" id="cyr-N9-N7D"/>
                             <constraint firstItem="ubI-Jk-NGf" firstAttribute="top" secondItem="A8R-nk-o6O" secondAttribute="top" constant="10" id="gBd-03-onQ"/>
                             <constraint firstItem="A8R-nk-o6O" firstAttribute="trailing" secondItem="yB7-mj-hWx" secondAttribute="trailing" constant="20" id="ha7-fj-VWZ"/>
                             <constraint firstItem="vx1-vZ-iIB" firstAttribute="centerX" secondItem="CHD-Na-8Gt" secondAttribute="centerX" id="ilo-gd-6pf"/>
@@ -259,8 +270,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oWh-hh-2wW"/>
+                    <connections>
+                        <outlet property="dataAction" destination="BOJ-hS-BIj" id="BJL-fX-FwR"/>
+                        <outlet property="directionSegment" destination="vx1-vZ-iIB" id="ajA-o0-n01"/>
+                        <outlet property="nameTF" destination="Jv1-CB-nd1" id="SMf-01-sMt"/>
+                        <outlet property="sumTF" destination="Fu9-ZZ-s0c" id="ubQ-u8-d5A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hht-km-fOe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Btq-yh-Ua6" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-1159" y="1256"/>
         </scene>

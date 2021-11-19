@@ -54,7 +54,7 @@ class AccumulationTableViewController: UITableViewController {
         newAccVC.newAccumulation = accumulation
     }
    
-     func unwind(for unwindSegue: UIStoryboardSegue) {
+    @IBAction func unwind(for unwindSegue: UIStoryboardSegue) {
          guard let newAccVC = unwindSegue.source as? NewAccumulationViewController else { return }
          accumulation = newAccVC.saveNewAccumulation()
          tableView.reloadData()
