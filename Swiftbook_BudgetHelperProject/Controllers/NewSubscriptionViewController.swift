@@ -10,13 +10,19 @@ import UIKit
 class NewSubscriptionViewController: UIViewController {
     
     
-    var newSubscription: [Action] = []
+     var newSubscription: [Action]!
+    
     
     @IBOutlet var nameSubscriptionTF: UITextField!
     @IBOutlet var ammountTF: UITextField!
     @IBOutlet var dateSubscription: UIDatePicker!
     @IBOutlet var periodicitySubscription: UISegmentedControl!
     
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        _ = newSubscription
+    }
     
     func periodicity() -> Action.Frequency {
         var action: Action.Frequency
@@ -31,16 +37,9 @@ class NewSubscriptionViewController: UIViewController {
         return action
     }
     
-   
-   func addSubSubscription() {
-       
-       
-      newSubscription.append(Action(amount: Double(ammountTF.text?.count ?? 0), direction: false, startDate: dateSubscription.date, frequency: periodicity(), name: nameSubscriptionTF.text ?? ""))
-    }
-  
-    @IBAction func pressdOK(_ sender: Any) {
-        addSubSubscription()
+    func pressdOK() -> [Action] {
+        newSubscription.append(Action(amount: Double(ammountTF.text?.count ?? 0), direction: false, startDate: dateSubscription.date, frequency: periodicity(), name: nameSubscriptionTF.text ?? ""))
+        return newSubscription
     }
 }
-
 

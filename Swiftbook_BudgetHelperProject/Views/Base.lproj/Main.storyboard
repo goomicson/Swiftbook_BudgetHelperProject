@@ -663,7 +663,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="qFC-KV-NiD">
                             <color key="tintColor" red="0.1529433727" green="0.15309533480000001" blue="0.14474323389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <segue destination="Uv5-d9-Qo3" kind="presentation" identifier="subscribtion" id="syZ-Qg-yTh"/>
+                                <segue destination="Uv5-d9-Qo3" kind="presentation" identifier="" id="syZ-Qg-yTh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -725,7 +725,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="OK"/>
                                 <connections>
-                                    <action selector="pressdOK:" destination="Uv5-d9-Qo3" eventType="touchUpInside" id="vd6-pW-beM"/>
+                                    <segue destination="Gal-ca-m9h" kind="unwind" unwindAction="unwindFor:" id="J9b-N4-Hfe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -760,6 +760,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QgQ-K9-cfK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Gal-ca-m9h" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3253.6231884057975" y="6.6964285714285712"/>
         </scene>

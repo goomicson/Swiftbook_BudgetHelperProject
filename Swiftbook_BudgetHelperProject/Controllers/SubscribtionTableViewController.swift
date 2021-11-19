@@ -11,13 +11,8 @@ class SubscribtionTableViewController: UITableViewController {
     
     private var subscription = Action.getData()
     
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        subscription += dadad
     }
     
     func sorted(for: [Action]) -> [Action]{
@@ -63,24 +58,18 @@ class SubscribtionTableViewController: UITableViewController {
         return sorted(for: subscription)[section].name
         
     }
-    
-    @IBAction override func unwind(for unwindSegue: UIStoryboardSegue) {
-
-
-    }
-
-
-    }
-
   
-    /*
      // MARK: - Navigation
      
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
+         guard let newSubVC = segue.destination as? NewSubscriptionViewController else { return }
+         newSubVC.newSubscription = subscription
      }
-     */
+    @IBAction func unwind(for unwindSegue: UIStoryboardSegue) {
+        guard let newSubVC =  unwindSegue.source as? NewSubscriptionViewController else {return}
+        subscription = newSubVC.pressdOK()
+        tableView.reloadData()
+        }
     
+
 }
