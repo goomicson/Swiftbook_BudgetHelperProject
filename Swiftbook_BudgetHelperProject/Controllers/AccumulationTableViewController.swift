@@ -9,7 +9,7 @@ import UIKit
 
 class AccumulationTableViewController: UITableViewController {
     
-    private let accumulation = Accumulation.getData()
+     var accumulation = Accumulation.getData()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +49,15 @@ class AccumulationTableViewController: UITableViewController {
         
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let newAccVC = segue.destination as? NewAccumulationViewController else { return }
+        newAccVC.newAccumulation = accumulation
+    }
    
+     func unwind(for unwindSegue: UIStoryboardSegue) {
+         guard let newAccVC = unwindSegue.source as? NewAccumulationViewController else { return }
+         accumulation = newAccVC.saveNewAccumulation()
+         tableView.reloadData()
+    }
 
 }

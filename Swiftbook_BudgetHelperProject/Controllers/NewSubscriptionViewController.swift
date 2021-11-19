@@ -10,7 +10,7 @@ import UIKit
 class NewSubscriptionViewController: UIViewController {
     
     
-     var newSubscription: [Action]!
+    var newSubscription: [Action]!
     
     
     @IBOutlet var nameSubscriptionTF: UITextField!
@@ -22,6 +22,7 @@ class NewSubscriptionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         _ = newSubscription
+        
     }
     
     func periodicity() -> Action.Frequency {
@@ -38,7 +39,8 @@ class NewSubscriptionViewController: UIViewController {
     }
     
     func pressdOK() -> [Action] {
-        newSubscription.append(Action(amount: Double(ammountTF.text?.count ?? 0), direction: false, startDate: dateSubscription.date, frequency: periodicity(), name: nameSubscriptionTF.text ?? ""))
+        let ammount: Double = Double(ammountTF.text ?? "") ?? 0.0
+        newSubscription.append(Action(amount: ammount, direction: false, startDate: dateSubscription.date, frequency: periodicity(), name: nameSubscriptionTF.text ?? ""))
         return newSubscription
     }
 }

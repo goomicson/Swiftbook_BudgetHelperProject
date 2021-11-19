@@ -11,9 +11,6 @@ class SubscribtionTableViewController: UITableViewController {
     
     private var subscription = Action.getData()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
     
     func sorted(for: [Action]) -> [Action]{
         var sorted: [Action] = []

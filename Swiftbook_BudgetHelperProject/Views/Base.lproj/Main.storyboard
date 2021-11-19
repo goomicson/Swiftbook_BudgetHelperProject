@@ -465,10 +465,10 @@
             </objects>
             <point key="canvasLocation" x="2511" y="707"/>
         </scene>
-        <!--View Controller-->
+        <!--New Accumulation View Controller-->
         <scene sceneID="LgZ-Zi-Y3k">
             <objects>
-                <viewController id="71W-uH-kCG" sceneMemberID="viewController">
+                <viewController id="71W-uH-kCG" customClass="NewAccumulationViewController" customModule="Swiftbook_BudgetHelperProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6bm-Nl-HNH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -567,6 +567,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Add accumulation">
                                     <fontDescription key="titleFontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="17"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Izp-dc-vLQ" kind="unwind" unwindAction="unwindFor:" id="KGV-qw-aw2"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gC5-xO-dNF">
                                 <rect key="frame" x="101" y="399" width="212.5" height="65.5"/>
@@ -614,10 +617,17 @@
                             <constraint firstItem="Kt3-Mj-efU" firstAttribute="trailing" secondItem="xLp-Zp-B0C" secondAttribute="trailing" constant="20" id="yUt-yR-GFM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="accumulationAmountTF" destination="WFA-Mg-ZbB" id="oDd-R8-YX5"/>
+                        <outlet property="currencySegment" destination="WI9-Wq-bOR" id="yjQ-PD-2o1"/>
+                        <outlet property="mounthTF" destination="TDC-A8-d5r" id="lv8-Iw-bue"/>
+                        <outlet property="nameTF" destination="1Ib-hc-BGC" id="q7a-oU-Ly4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="19P-S3-jod" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Izp-dc-vLQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3254" y="706"/>
+            <point key="canvasLocation" x="3253.6231884057975" y="705.80357142857144"/>
         </scene>
         <!--Subscribtion Table View Controller-->
         <scene sceneID="16t-m5-TZs">
@@ -691,7 +701,7 @@
                                 <color key="backgroundColor" red="0.99636322259999999" green="0.99215686270000003" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.1529433727" green="0.15309533480000001" blue="0.14474323389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cK2-it-wSX">
                                 <rect key="frame" x="20" y="294" width="374" height="32"/>
