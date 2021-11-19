@@ -29,6 +29,7 @@
 		F813F07F2743F64700E51268 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F813F07E2743F64700E51268 /* HistoryViewController.swift */; };
 		F813F081274411C300E51268 /* SubscribtionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F813F080274411C300E51268 /* SubscribtionTableViewController.swift */; };
 		F813F083274416A800E51268 /* AccumulationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F813F082274416A800E51268 /* AccumulationTableViewController.swift */; };
+		F889B88D2747D4BE007087F9 /* NewSubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F889B88C2747D4BE007087F9 /* NewSubscriptionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		F813F07E2743F64700E51268 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		F813F080274411C300E51268 /* SubscribtionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribtionTableViewController.swift; sourceTree = "<group>"; };
 		F813F082274416A800E51268 /* AccumulationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccumulationTableViewController.swift; sourceTree = "<group>"; };
+		F889B88C2747D4BE007087F9 /* NewSubscriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSubscriptionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				F813F07E2743F64700E51268 /* HistoryViewController.swift */,
 				A55E48602741723400F21D8B /* MyPlansViewController.swift */,
 				F813F080274411C300E51268 /* SubscribtionTableViewController.swift */,
+				F889B88C2747D4BE007087F9 /* NewSubscriptionViewController.swift */,
 				F813F082274416A800E51268 /* AccumulationTableViewController.swift */,
 			);
 			path = Controllers;
@@ -240,6 +243,7 @@
 				F813F083274416A800E51268 /* AccumulationTableViewController.swift in Sources */,
 				A55E48372741703E00F21D8B /* AppDelegate.swift in Sources */,
 				B8CCC2BC274280F0004E8539 /* Accumulation.swift in Sources */,
+				F889B88D2747D4BE007087F9 /* NewSubscriptionViewController.swift in Sources */,
 				A55E48392741703E00F21D8B /* SceneDelegate.swift in Sources */,
 				B8CCC2BE27428113004E8539 /* Action.swift in Sources */,
 				A55E48642741730500F21D8B /* User.swift in Sources */,

@@ -9,10 +9,15 @@ import UIKit
 
 class SubscribtionTableViewController: UITableViewController {
     
-    private let subscription = Action.getData()
+    private var subscription = Action.getData()
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        subscription += dadad
     }
     
     func sorted(for: [Action]) -> [Action]{
@@ -59,8 +64,14 @@ class SubscribtionTableViewController: UITableViewController {
         
     }
     
-  
-    
+    @IBAction override func unwind(for unwindSegue: UIStoryboardSegue) {
+
+
+    }
+
+
+    }
+
   
     /*
      // MARK: - Navigation

@@ -17,6 +17,7 @@ class MyPlansViewController: UIViewController {
     @IBOutlet var accumulationEditButton: UIButton!
     @IBOutlet var accumulationAmountTitle: UILabel!
     
+    @IBOutlet var ghjuhtcc: UIProgressView!
     @IBOutlet var accumulationProgressBarBackgroundTrack: UIView!
     @IBOutlet var accumulationProgressBarProgressTrack: UIView!
     
@@ -37,10 +38,11 @@ progress()
     }
 
     
-    func progress() {
-        let totalProgress = accumulation.first?.percent
+    func progress()  {
+       // let totalProgress = Float(accumulation.first?.currentAmount ?? 0) / Float(accumulation.first?.totalAmount ?? 0)
+        let totalProgress = Float(accumulation.first?.percent ?? 0) 
     
-        accumulationProgressBarProgressTrack.
+        ghjuhtcc.setProgress(Float(totalProgress), animated: true)
     }
    
 }

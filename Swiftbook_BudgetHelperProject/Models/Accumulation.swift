@@ -16,8 +16,9 @@ struct Accumulation {
     var exchange: Exchange
     var currentAmount: Double = 0
     
-    var percent: Double {
-        round(currentAmount / totalAmount * 100)
+    var percent: Float {
+        Float(round(currentAmount / totalAmount * 100) / 100)
+        
     }
     var monthlyPayment: Double {
         totalAmount / Double(duration)
@@ -45,7 +46,7 @@ extension Accumulation {
                 dates.append(formattedDate)
             }
         }
-        let accumulations = [Accumulation(name: "First Accumulation", totalAmount: 100000, dayOfProfit: dates[0], duration: 12, exchange: .ruble, currentAmount: 50),
+        let accumulations = [Accumulation(name: "First Accumulation", totalAmount: 100000, dayOfProfit: dates[0], duration: 12, exchange: .ruble, currentAmount: 500),
                              Accumulation(name: "Second Accumulation", totalAmount: 18000, dayOfProfit: dates[1], duration: 15, exchange: .dollar),
                              Accumulation(name: "Third", totalAmount: 1000000, dayOfProfit: dates[2], duration: 120, exchange: .euro, currentAmount: 2)]
         return accumulations
