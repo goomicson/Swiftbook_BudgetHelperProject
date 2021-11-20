@@ -14,7 +14,6 @@ class HistoryTableViewController: UITableViewController {
     
         override func viewDidLoad() {
             super.viewDidLoad()
-            history += newHistory
         }
         
         func sorted(for: [Action]) -> [Action]{
@@ -65,6 +64,7 @@ class HistoryTableViewController: UITableViewController {
         @IBAction func unwind(for unwindSegue: UIStoryboardSegue) {
             guard let newVC =  unwindSegue.source as? NewActionViewController else {return}
             newHistory = newVC.saveAction()
+            history += newHistory
              tableView.reloadData()
             
         }
