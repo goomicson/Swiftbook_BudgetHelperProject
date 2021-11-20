@@ -21,7 +21,7 @@ class NewSubscriptionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        _ = newSubscription
+       // _ = newSubscription
         
     }
     

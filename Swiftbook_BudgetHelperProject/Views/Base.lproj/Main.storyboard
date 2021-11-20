@@ -23,64 +23,6 @@
         </array>
     </customFonts>
     <scenes>
-        <!--History-->
-        <scene sceneID="No1-JA-b1h">
-            <objects>
-                <viewController title="History" id="VEV-tg-2uN" customClass="HistoryViewController" customModule="Swiftbook_BudgetHelperProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cO5-bk-bOb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1M-c9-SXc">
-                                <rect key="frame" x="172" y="54" width="70" height="26"/>
-                                <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="22"/>
-                                <color key="textColor" red="0.1529433727" green="0.15309533480000001" blue="0.14474323389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="cyG-nS-SsO">
-                                <rect key="frame" x="20" y="100" width="374" height="713"/>
-                                <color key="backgroundColor" red="0.99636322259999999" green="0.98482829329999999" blue="0.95545035599999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="history" id="cpG-bl-mXX">
-                                        <rect key="frame" x="0.0" y="44.5" width="374" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cpG-bl-mXX" id="H0J-um-IcS">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.99636322259999999" green="0.98482829329999999" blue="0.95545035599999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="VEV-tg-2uN" id="GDS-Yd-Xv1"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="CS3-PT-pqi"/>
-                        <color key="backgroundColor" red="0.99636322259999999" green="0.98482829329999999" blue="0.95545035599999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="i1M-c9-SXc" firstAttribute="centerX" secondItem="cO5-bk-bOb" secondAttribute="centerX" id="Ebt-cN-QFn"/>
-                            <constraint firstItem="cyG-nS-SsO" firstAttribute="leading" secondItem="CS3-PT-pqi" secondAttribute="leading" constant="20" id="OhF-Gh-dwM"/>
-                            <constraint firstItem="CS3-PT-pqi" firstAttribute="trailing" secondItem="cyG-nS-SsO" secondAttribute="trailing" constant="20" id="TrQ-ji-aRf"/>
-                            <constraint firstItem="i1M-c9-SXc" firstAttribute="top" secondItem="CS3-PT-pqi" secondAttribute="top" constant="10" id="V4B-KY-08h"/>
-                            <constraint firstItem="cyG-nS-SsO" firstAttribute="top" secondItem="i1M-c9-SXc" secondAttribute="bottom" constant="20" id="erk-HE-M5b"/>
-                            <constraint firstItem="cyG-nS-SsO" firstAttribute="bottom" secondItem="CS3-PT-pqi" secondAttribute="bottom" id="x8G-dV-Ian"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="" id="MrD-ek-9iI">
-                        <imageReference key="image" image="clock.fill" catalog="system" renderingMode="hierarchical-single">
-                            <hierarchicalColors>
-                                <color red="0.62725061179999997" green="0.46383184189999999" blue="0.33568787570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color systemColor="secondaryLabelColor"/>
-                                <color systemColor="tertiaryLabelColor"/>
-                            </hierarchicalColors>
-                        </imageReference>
-                    </tabBarItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LFj-fA-qKO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-210" y="408"/>
-        </scene>
         <!--HomeScreen-->
         <scene sceneID="Qs5-uh-1Ma">
             <objects>
@@ -812,13 +754,59 @@
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="kmx-ZJ-VXn" kind="relationship" relationship="viewControllers" destinationCreationSelector="1" id="6GK-k4-6B9"/>
-                        <segue destination="VEV-tg-2uN" kind="relationship" relationship="viewControllers" id="ipN-rM-CbW"/>
                         <segue destination="xlR-VJ-LQZ" kind="relationship" relationship="viewControllers" id="M5f-yA-UWu"/>
+                        <segue destination="OxM-dh-mMk" kind="relationship" relationship="viewControllers" id="rJH-79-fmd"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ktN-Xh-8ph" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-210" y="-394"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="Smv-4C-hn8">
+            <objects>
+                <tableViewController id="XnJ-2k-Uk9" customClass="HistoryTableViewController" customModule="Swiftbook_BudgetHelperProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="pep-jT-UHz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="history" id="XXz-al-fYP">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XXz-al-fYP" id="Can-Ze-PM2">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="XnJ-2k-Uk9" id="seu-xm-ZOg"/>
+                            <outlet property="delegate" destination="XnJ-2k-Uk9" id="Cvl-4f-B0E"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="iCO-9B-ENF"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rg7-YB-JVB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-210" y="1256"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="e9H-Dp-wNX">
+            <objects>
+                <navigationController id="OxM-dh-mMk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="clock.fill" catalog="system" id="yUd-7P-D37"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZeN-e0-MdT" customClass="H">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="XnJ-2k-Uk9" kind="relationship" relationship="rootViewController" id="IyG-t9-Mtf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vbd-Xq-9ed" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-210" y="361"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Qvq-fV-Wt5">
@@ -866,6 +854,9 @@
         </systemColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="tertiaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>

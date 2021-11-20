@@ -9,7 +9,7 @@ import UIKit
 
 class NewActionViewController: UIViewController {
     
-    var newHistory: [Action]!
+    var newHistory: [Action]! = []
     
     @IBOutlet var directionSegment: UISegmentedControl!
     @IBOutlet var sumTF: UITextField!
@@ -19,7 +19,6 @@ class NewActionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
     }
     
@@ -32,13 +31,12 @@ class NewActionViewController: UIViewController {
         }
     }
     
-    
     func saveAction () -> [Action] {
-        let ammount: Double = Double(sumTF.text ?? "") ?? 0.0
+
+      let ammount: Double = Double(sumTF.text!) ?? 0.0
         
-        newHistory.append(Action(amount: ammount, direction: deductOrAdd(), startDate: dataAction.date, frequency: .none))
-        
+        newHistory.append(Action(amount: ammount, direction: deductOrAdd(), startDate: dataAction.date, frequency: Action.Frequency.none, name: nameTF.text, endDate: dataAction.date))
         return newHistory
     }
-    
+
 }
