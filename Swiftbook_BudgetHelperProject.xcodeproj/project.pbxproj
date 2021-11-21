@@ -12,7 +12,6 @@
 		A55E483E2741703E00F21D8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55E483C2741703E00F21D8B /* Main.storyboard */; };
 		A55E48402741704200F21D8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A55E483F2741704200F21D8B /* Assets.xcassets */; };
 		A55E48432741704200F21D8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55E48412741704200F21D8B /* LaunchScreen.storyboard */; };
-		A55E4857274171CA00F21D8B /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A55E484E274171C900F21D8B /* SF-Pro-Rounded-Bold.otf */; };
 		A55E4858274171CA00F21D8B /* SF-Pro-Rounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A55E484F274171C900F21D8B /* SF-Pro-Rounded-Medium.otf */; };
 		A55E4859274171CA00F21D8B /* SF-Pro-Rounded-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = A55E4850274171C900F21D8B /* SF-Pro-Rounded-Thin.otf */; };
 		A55E485A274171CA00F21D8B /* SF-Pro-Rounded-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A55E4851274171C900F21D8B /* SF-Pro-Rounded-Regular.otf */; };
@@ -23,6 +22,12 @@
 		A55E485F274171CA00F21D8B /* SF-Pro-Rounded-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A55E4856274171CA00F21D8B /* SF-Pro-Rounded-Semibold.otf */; };
 		A55E48612741723400F21D8B /* MyPlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55E48602741723400F21D8B /* MyPlansViewController.swift */; };
 		A55E48642741730500F21D8B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55E48632741730500F21D8B /* User.swift */; };
+		A5D72A9E274965E2000340DE /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D72A9D274965E2000340DE /* Users.swift */; };
+		A5D72AA12749851D000340DE /* HomeScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D72AA02749851D000340DE /* HomeScreenTableViewCell.swift */; };
+		A5D72AA227498BDB000340DE /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A55E484E274171C900F21D8B /* SF-Pro-Rounded-Bold.otf */; };
+		A5D72AA8274A37FA000340DE /* SubscriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D72AA7274A37FA000340DE /* SubscriptionTableViewCell.swift */; };
+		A5D72AAA274A3811000340DE /* AccumulationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D72AA9274A3811000340DE /* AccumulationTableViewCell.swift */; };
+		A5D72AAC274A4194000340DE /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D72AAB274A4194000340DE /* HistoryTableViewCell.swift */; };
 		A5F27D872741814F006E5ED9 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F27D862741814F006E5ED9 /* HomeScreenViewController.swift */; };
 		B8CCC2BC274280F0004E8539 /* Accumulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CCC2BB274280F0004E8539 /* Accumulation.swift */; };
 		B8CCC2BE27428113004E8539 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CCC2BD27428113004E8539 /* Action.swift */; };
@@ -53,6 +58,11 @@
 		A55E4856274171CA00F21D8B /* SF-Pro-Rounded-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Semibold.otf"; path = "../../../../../../../../../../Library/Fonts/SF-Pro-Rounded-Semibold.otf"; sourceTree = "<group>"; };
 		A55E48602741723400F21D8B /* MyPlansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlansViewController.swift; sourceTree = "<group>"; };
 		A55E48632741730500F21D8B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A5D72A9D274965E2000340DE /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		A5D72AA02749851D000340DE /* HomeScreenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenTableViewCell.swift; sourceTree = "<group>"; };
+		A5D72AA7274A37FA000340DE /* SubscriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionTableViewCell.swift; sourceTree = "<group>"; };
+		A5D72AA9274A3811000340DE /* AccumulationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AccumulationTableViewCell.swift; path = Swiftbook_BudgetHelperProject/Controllers/Cells/AccumulationTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		A5D72AAB274A4194000340DE /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		A5F27D862741814F006E5ED9 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		B8CCC2BB274280F0004E8539 /* Accumulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accumulation.swift; sourceTree = "<group>"; };
 		B8CCC2BD27428113004E8539 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
@@ -117,6 +127,7 @@
 		A55E484B2741707400F21D8B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A5D72A9F274984E9000340DE /* Cells */,
 				A5F27D862741814F006E5ED9 /* HomeScreenViewController.swift */,
 				A55E48602741723400F21D8B /* MyPlansViewController.swift */,
 				F813F080274411C300E51268 /* SubscribtionTableViewController.swift */,
@@ -158,10 +169,22 @@
 			isa = PBXGroup;
 			children = (
 				A55E48632741730500F21D8B /* User.swift */,
+				A5D72A9D274965E2000340DE /* Users.swift */,
 				B8CCC2BB274280F0004E8539 /* Accumulation.swift */,
 				B8CCC2BD27428113004E8539 /* Action.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A5D72A9F274984E9000340DE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A5D72AA02749851D000340DE /* HomeScreenTableViewCell.swift */,
+				A5D72AAB274A4194000340DE /* HistoryTableViewCell.swift */,
+				A5D72AA7274A37FA000340DE /* SubscriptionTableViewCell.swift */,
+				A5D72AA9274A3811000340DE /* AccumulationTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,10 +251,10 @@
 				A55E485B274171CA00F21D8B /* SF-Pro-Rounded-Light.otf in Resources */,
 				A55E485A274171CA00F21D8B /* SF-Pro-Rounded-Regular.otf in Resources */,
 				A55E4858274171CA00F21D8B /* SF-Pro-Rounded-Medium.otf in Resources */,
-				A55E4857274171CA00F21D8B /* SF-Pro-Rounded-Bold.otf in Resources */,
 				A55E485F274171CA00F21D8B /* SF-Pro-Rounded-Semibold.otf in Resources */,
 				A55E485D274171CA00F21D8B /* SF-Pro-Rounded-Heavy.otf in Resources */,
 				A55E4859274171CA00F21D8B /* SF-Pro-Rounded-Thin.otf in Resources */,
+				A5D72AA227498BDB000340DE /* SF-Pro-Rounded-Bold.otf in Resources */,
 				A55E48402741704200F21D8B /* Assets.xcassets in Resources */,
 				A55E483E2741703E00F21D8B /* Main.storyboard in Resources */,
 			);
@@ -244,17 +267,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5D72AAC274A4194000340DE /* HistoryTableViewCell.swift in Sources */,
 				F813F081274411C300E51268 /* SubscribtionTableViewController.swift in Sources */,
 				A55E48612741723400F21D8B /* MyPlansViewController.swift in Sources */,
+				A5D72AA8274A37FA000340DE /* SubscriptionTableViewCell.swift in Sources */,
 				F889B893274850E7007087F9 /* NewActionViewController.swift in Sources */,
 				F813F083274416A800E51268 /* AccumulationTableViewController.swift in Sources */,
 				F889B89527490DF1007087F9 /* HistoryTableViewController.swift in Sources */,
+				A5D72AAA274A3811000340DE /* AccumulationTableViewCell.swift in Sources */,
 				A55E48372741703E00F21D8B /* AppDelegate.swift in Sources */,
+				A5D72A9E274965E2000340DE /* Users.swift in Sources */,
 				B8CCC2BC274280F0004E8539 /* Accumulation.swift in Sources */,
 				F889B88D2747D4BE007087F9 /* NewSubscriptionViewController.swift in Sources */,
 				A55E48392741703E00F21D8B /* SceneDelegate.swift in Sources */,
 				B8CCC2BE27428113004E8539 /* Action.swift in Sources */,
 				F889B89127484266007087F9 /* NewAccumulationViewController.swift in Sources */,
+				A5D72AA12749851D000340DE /* HomeScreenTableViewCell.swift in Sources */,
 				A55E48642741730500F21D8B /* User.swift in Sources */,
 				A5F27D872741814F006E5ED9 /* HomeScreenViewController.swift in Sources */,
 			);

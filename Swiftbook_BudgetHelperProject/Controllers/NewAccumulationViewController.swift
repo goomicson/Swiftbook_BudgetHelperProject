@@ -9,16 +9,25 @@ import UIKit
 
 class NewAccumulationViewController: UIViewController {
     
-    var newAccumulation: [Accumulation]!
-    
+    @IBOutlet var sumPerMonthLabel: UILabel!
     @IBOutlet var nameTF: UITextField!
     @IBOutlet var currencySegment: UISegmentedControl!
     @IBOutlet var accumulationAmountTF: UITextField!
     @IBOutlet var mounthTF: UITextField!
     
+    var newAccumulation: [Accumulation]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        _ = newAccumulation
+        let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
+        view.addGestureRecognizer(tap)
+    }
+    
+    func calculatingPayPerMonth() -> Int {
+        let accumulationSum: Int = Int(accumulationAmountTF.text!) ?? 0
+        let months: Int = Int(mounthTF.text!) ?? 1
+        let sumPerMonth = accumulationSum / months
+        return sumPerMonth
     }
     
     func currencySelection() -> Accumulation.Exchange{
@@ -34,12 +43,10 @@ class NewAccumulationViewController: UIViewController {
         return currency
     }
     
-    
     func saveNewAccumulation() -> [Accumulation] {
         let totalAmount:Double = Double(accumulationAmountTF.text ?? "") ?? 0.0
         let mount: Int = Int(mounthTF.text ?? "") ?? 0
-        
-        newAccumulation.append(Accumulation(name: nameTF.text ?? "", totalAmount: totalAmount, dayOfProfit: Date.now, duration: mount, exchange: currencySelection()))
+        newAccumulation.append(Accumulation(name: nameTF.text ?? "", totalAmount: Int(totalAmount), dayOfProfit: Date.now, duration: mount, exchange: currencySelection()))
        
         return newAccumulation
         

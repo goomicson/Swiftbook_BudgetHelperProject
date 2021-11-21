@@ -31,31 +31,36 @@ class SubscribtionTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return 2
+        return 1
     }
-    
+    //Передача данных в кастомную ячейку
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "subscribtion", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "subscription") as! SubscriptionTableViewCell
         let nameSubscription = sorted(for: subscription)[indexPath.section]
-        var content = cell.defaultContentConfiguration()
         let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .long
-        if  indexPath.row == 0  {
-            content.text = "Сумма подписки: \(nameSubscription.amount)"
-        } else {
-            content.text = "Дата списания: \(dateFormatter.string(from: nameSubscription.startDate))"
-        }
-        cell.contentConfiguration = content
+        dateFormatter.dateStyle = .short
+        cell.nameLabel.text = nameSubscription.name
+        cell.dateLabel.text = dateFormatter.string(from: nameSubscription.startDate)
+        cell.sumLable.text = "\(Int(nameSubscription.amount))"
         return cell
-   
     }
-    
-    override func tableView(_ tableView: UITableView,titleForHeaderInSection section: Int) -> String? {
-        return sorted(for: subscription)[section].name
         
-    }
-  
+//        var content = cell.defaultContentConfiguration()
+//        let dateFormatter = DateFormatter()
+//        dateFormatter.dateStyle = .short
+//        if  indexPath.row == 0  {
+//            content.text = "Сумма подписки: \(nameSubscription.amount)"
+//        } else {
+//            content.text = "Дата списания: \(dateFormatter.string(from: nameSubscription.startDate))"
+//        }
+//        cell.contentConfiguration = content
+      
+//
+//    override func tableView(_ tableView: UITableView,titleForHeaderInSection section: Int) -> String? {
+//        return sorted(for: subscription)[section].name
+//
+//    }
+//
      // MARK: - Navigation
      
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

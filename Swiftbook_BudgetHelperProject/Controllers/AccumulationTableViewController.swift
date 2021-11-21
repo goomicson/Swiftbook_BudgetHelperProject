@@ -25,29 +25,37 @@ class AccumulationTableViewController: UITableViewController {
         return 2
     }
 
-  
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "accumulation", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "accumulation") as! AccumulationTableViewCell
         let newAccumulation = accumulation[indexPath.section]
-        var content = cell.defaultContentConfiguration()
-        if indexPath.row == 0 {
-            content.text = "Полная сумма: \(newAccumulation.totalAmount)"
-         content.secondaryText = "Валюта: \(newAccumulation.exchange)"
-
-        } else {
-            
-            content.text = "Уже внесено:\(newAccumulation.currentAmount)"
-            content.secondaryText = "Продолжительность: \(newAccumulation.duration) месяцев"
-            
-        }
-        cell.contentConfiguration = content
+        cell.dateLabel.text = "\(newAccumulation.duration) months"
+        cell.nameLabel.text = "name"
+        cell.sumLable.text = "\(Int(newAccumulation.currentAmount))/\(newAccumulation.totalAmount)\(newAccumulation.exchange.rawValue)"
         return cell
     }
     
-    override func tableView(_ tableView: UITableView,titleForHeaderInSection section: Int) -> String? {
-        return accumulation[section].name
-        
-    }
+    
+    
+    
+    
+//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "accumulation", for: indexPath)
+//        let newAccumulation = accumulation[indexPath.section]
+//        var content = cell.defaultContentConfiguration()
+//        if indexPath.row == 0 {
+//
+//            content.text = "Progress: \(Int(newAccumulation.currentAmount))/\(newAccumulation.totalAmount)\(newAccumulation.exchange.rawValue)"
+//        } else {
+//            content.text = "Duration: \(newAccumulation.duration) months"
+//        }
+//        cell.contentConfiguration = content
+//        return cell
+//    }
+//
+//    override func tableView(_ tableView: UITableView,titleForHeaderInSection section: Int) -> String? {
+//        return accumulation[section].name
+//
+//    }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let newAccVC = segue.destination as? NewAccumulationViewController else { return }

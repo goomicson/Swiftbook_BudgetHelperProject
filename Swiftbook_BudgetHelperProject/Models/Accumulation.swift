@@ -9,7 +9,7 @@ import Foundation
 
 struct Accumulation {
     let name: String
-    let totalAmount: Double
+    let totalAmount: Int
     let dayOfProfit: Date
     
     var duration: Int
@@ -17,19 +17,19 @@ struct Accumulation {
     var currentAmount: Double = 0
     
     var percent: Float {
-        Float(round(currentAmount / totalAmount * 100) / 100)
+        Float((currentAmount / Double(totalAmount) * 100) / 100)
         
     }
-    var monthlyPayment: Double {
-        totalAmount / Double(duration)
+    var monthlyPayment: Int {
+        totalAmount / duration
     }
 }
 
 extension Accumulation {
-    enum Exchange {
-        case dollar
-        case euro
-        case ruble
+    enum Exchange: String {
+        case dollar = "$"
+        case euro =  "€"
+        case ruble = "₽"
     }
 }
 
@@ -46,9 +46,9 @@ extension Accumulation {
                 dates.append(formattedDate)
             }
         }
-        let accumulations = [Accumulation(name: "First Accumulation", totalAmount: 100000, dayOfProfit: dates[0], duration: 12, exchange: .ruble, currentAmount: 500),
-                             Accumulation(name: "Second Accumulation", totalAmount: 18000, dayOfProfit: dates[1], duration: 15, exchange: .dollar),
-                             Accumulation(name: "Third", totalAmount: 1000000, dayOfProfit: dates[2], duration: 120, exchange: .euro, currentAmount: 2)]
+        let accumulations = [Accumulation(name: "Audi Q7", totalAmount: 100000, dayOfProfit: dates[0], duration: 24, exchange: .dollar, currentAmount: 73500),
+                             Accumulation(name: "Macbook Pro 14", totalAmount: 5000, dayOfProfit: dates[1], duration: 18, exchange: .dollar),
+                             Accumulation(name: "Trip to Australia", totalAmount: 12000, dayOfProfit: dates[2], duration: 120, exchange: .dollar, currentAmount: 5750)]
         return accumulations
     }
 }

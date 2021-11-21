@@ -21,7 +21,8 @@ class NewSubscriptionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       // _ = newSubscription
+        let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
+        view.addGestureRecognizer(tap)
         
     }
     

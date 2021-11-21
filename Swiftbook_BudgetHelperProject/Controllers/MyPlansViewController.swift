@@ -10,16 +10,13 @@ import UIKit
 class MyPlansViewController: UIViewController {
     
     private let accumulation = Accumulation.getData()
-
+    
     //MARK: accumulationView Outlets
     @IBOutlet var accumulationBackgroundView: UIView!
     @IBOutlet var accumulationTitle: UILabel!
-    @IBOutlet var accumulationEditButton: UIButton!
     @IBOutlet var accumulationAmountTitle: UILabel!
     
-    @IBOutlet var ghjuhtcc: UIProgressView!
-    @IBOutlet var accumulationProgressBarBackgroundTrack: UIView!
-    @IBOutlet var accumulationProgressBarProgressTrack: UIView!
+    @IBOutlet var progressOfAccumulation: UIProgressView!
     
     @IBOutlet var subscriptionsBackgroundView: UIView!
     @IBOutlet var subscriptionsButton: UIButton!
@@ -29,22 +26,22 @@ class MyPlansViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        customizingCurrentAccumulationView()
-        customizingButtonsView()
+        let firstAccumulation = accumulation.first
+        customizingButtonsAndView()
+        customizingCurrentAccumulationView ()
         accumulationTitle.text = accumulation.first?.name
-        accumulationAmountTitle.text = accumulation.first?.totalAmount.description
-progress()
+        accumulationAmountTitle.text = "\(Int(firstAccumulation?.currentAmount ?? 0))/\(firstAccumulation?.totalAmount.description ?? "")\(firstAccumulation?.exchange.rawValue ?? "error")"
+        progress()
         
     }
-
+    
     
     func progress()  {
-       // let totalProgress = Float(accumulation.first?.currentAmount ?? 0) / Float(accumulation.first?.totalAmount ?? 0)
-        let totalProgress = Float(accumulation.first?.percent ?? 0) 
-    
-        ghjuhtcc.setProgress(Float(totalProgress), animated: true)
+        let totalProgress = Float(accumulation.first?.percent ?? 46)
+        print (totalProgress)
+        progressOfAccumulation.setProgress(totalProgress, animated: false)
     }
-   
+    
 }
 extension MyPlansViewController {
     func customizingCurrentAccumulationView (){
@@ -53,13 +50,11 @@ extension MyPlansViewController {
         accumulationBackgroundView.layer.shadowOpacity = 1
         accumulationBackgroundView.layer.shadowOffset = .init(width: 0, height: 7)
         accumulationBackgroundView.layer.shadowRadius = 20
-        accumulationProgressBarBackgroundTrack.layer.cornerRadius = 7
-        accumulationProgressBarProgressTrack.layer.cornerRadius = 7
     }
 }
 
 extension MyPlansViewController {
-    func customizingButtonsView() {
+    func customizingButtonsAndView() {
         accumulationsBackgroundView.layer.cornerRadius = 10
         accumulationsBackgroundView.layer.shadowColor = CGColor.init(red: 0.1, green: 0.1, blue: 0.1, alpha: 0.2)
         accumulationsBackgroundView.layer.shadowOpacity = 1

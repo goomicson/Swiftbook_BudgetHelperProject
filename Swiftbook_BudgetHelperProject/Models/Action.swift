@@ -143,12 +143,12 @@ extension Action {
             }
         }
         let actions = [
-            Action(amount: 10000, direction: true, startDate: dates[0], frequency: .week, name: "First Action", endDate: dates[1]),
-            Action(amount: 100000, direction: false, startDate: dates[2], frequency: .year, name: "Second Action", endDate: dates[3]),
-            Action(amount: 1453839, direction: true, startDate: dates[4], frequency: .month, name: "Third Action", endDate: dates[5]),
-            Action(amount: 136578, direction: false, startDate: dates[6], frequency: .month, name: "Fourth Action", endDate: dates[7]),
+            Action(amount: 10000, direction: true, startDate: dates[0], frequency: .week, name: "", endDate: dates[1]),
+            Action(amount: 4500, direction: false, startDate: dates[2], frequency: .year, name: "Netflix Subscription", endDate: dates[3]),
+            Action(amount: 1453839, direction: true, startDate: dates[4], frequency: .month, name: "", endDate: dates[5]),
+            Action(amount: 5000, direction: false, startDate: dates[6], frequency: .month, name: "Parking", endDate: dates[7]),
             Action(amount: 236793, direction: true, startDate: Date(), frequency: .none),
-            Action(amount: 265, direction: false, startDate: Date(), frequency: .month, name: "Cinema")
+            Action(amount: 169, direction: false, startDate: Date(), frequency: .month, name: "Apple Music")
         ]
         return actions
     }
