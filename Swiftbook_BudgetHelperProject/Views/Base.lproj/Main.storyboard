@@ -70,8 +70,8 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yandex.Plus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qze-0Y-igN">
-                                                            <rect key="frame" x="97" y="-7.5" width="76.5" height="18"/>
-                                                            <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="15"/>
+                                                            <rect key="frame" x="94.5" y="-7.5" width="81.5" height="18"/>
+                                                            <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="15"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -156,7 +156,9 @@
                             <constraint firstItem="QNl-GO-1E9" firstAttribute="trailing" secondItem="ABc-kB-qju" secondAttribute="trailing" constant="20" id="zRZ-lg-bFi"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="house.fill" catalog="system" id="dz4-Kz-UdM"/>
+                    <tabBarItem key="tabBarItem" title="" image="house.fill" catalog="system" id="dz4-Kz-UdM">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" title="My Bill" largeTitleDisplayMode="always" id="qg5-to-qdQ"/>
                     <connections>
                         <outlet property="summLabel" destination="bsO-sc-Egq" id="RE0-RX-fkU"/>
@@ -858,9 +860,9 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VPk-Oi-Uaq">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" red="0.62725061179999997" green="0.46383184189999999" blue="0.33568787570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="selectedImageTintColor" red="0.458770752" green="0.45885384080000002" blue="0.45876550669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.89017981290000003" green="0.86286360029999998" blue="0.78877598049999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.89017981290000003" green="0.86286360029999998" blue="0.78877598049999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.63921719789999998" green="0.46017390489999999" blue="0.3248424828" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="selectedIndex">
