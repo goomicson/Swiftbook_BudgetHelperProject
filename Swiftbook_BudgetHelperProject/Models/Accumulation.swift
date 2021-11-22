@@ -25,13 +25,7 @@ struct Accumulation {
     }
 }
 
-extension Accumulation {
-    enum Exchange: String {
-        case dollar = "$"
-        case euro =  "€"
-        case ruble = "₽"
-    }
-}
+//MARK: - GetData
 
 extension Accumulation {
     static func getData() -> [Accumulation] {

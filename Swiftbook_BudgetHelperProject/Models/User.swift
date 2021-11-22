@@ -13,14 +13,8 @@ struct User {
     var exchange: Exchange
 }
 
-extension User {
-    enum Exchange: String {
-        case dollar = "$"
-        case euro =  "€"
-        case ruble = "₽"
-    }
-}
-
+////MARK: - GetData
+//
 //extension User {
 //    static func getData() -> User {
 //        let user = User(name: "Richard Gere", account: 12500000, exchange: .ruble)
